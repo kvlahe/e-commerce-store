@@ -8,10 +8,10 @@ const formatter = new Intl.NumberFormat("en-US", {
 })
 
 interface CurrencyProps {
-    value: string | number;
+    value?: string | number;
 }
 
-export const Currency: React.FC<CurrencyProps> = ({ value }) => {
+const Currency: React.FC<CurrencyProps> = ({ value=0 }) => {
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
@@ -27,4 +27,6 @@ export const Currency: React.FC<CurrencyProps> = ({ value }) => {
         </div>
     )
 }
+
+export default Currency
 
