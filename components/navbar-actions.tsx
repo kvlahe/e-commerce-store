@@ -6,7 +6,7 @@ import { ShoppingBag } from 'lucide-react'
 import useCart from '@/hooks/use-cart'
 import { useRouter } from 'next/navigation'
 
-export const NavbarActions = () => {
+const NavbarActions = () => {
     const [isMounted, setIsMounted] = useState(false)
     
     useEffect(() => {
@@ -32,3 +32,5 @@ export const NavbarActions = () => {
     </div>
   )
 }
+
+export default NavbarActions

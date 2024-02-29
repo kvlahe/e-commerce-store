@@ -2,13 +2,13 @@ import getBillboard from '@/actions/get-billboards'
 import getProducts from '@/actions/get-products'
 import { ProductList } from '@/components/product-list'
 import Billboard from '@/components/ui/billboard'
-import { Container } from '@/components/ui/container'
+import  Container  from '@/components/ui/container'
 import React from 'react'
 
 export const revalidate = 0
 
 const HomePage = async () => {
-  const billboard = await getBillboard('e5666281-e174-4bce-b427-03c26f5389eb');
+  const billboard = await getBillboard('00952419-6e36-408a-934c-dace2a5e6f6b');
   const products = await getProducts({ isFeatured: true });
 
   return (

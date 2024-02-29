@@ -7,6 +7,8 @@ interface BillboardProps {
 import React from 'react'
 
 export const Billboard: React.FC<BillboardProps> = ({ data }) => {
+    if (!data) return null;
+    console.log(data.label);
     return (
         <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden">
             <div

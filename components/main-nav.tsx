@@ -10,7 +10,7 @@ interface MainNavProps {
 }
 
 
-export const MainNav: React.FC<MainNavProps> = ({ data }) => {
+const MainNav: React.FC<MainNavProps> = ({ data }) => {
     const path = usePathname();
 
     const routes = data.map((route) => ({
@@ -39,3 +39,5 @@ export const MainNav: React.FC<MainNavProps> = ({ data }) => {
         </nav>
     )
 }
+
+export default MainNav
